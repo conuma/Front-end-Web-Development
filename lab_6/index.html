@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms Lab</title>
+    <link href="form_styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div>
+          <h1>HTML 1 Forms Lab</h1>
+        </div>
+        <form action="https://nameless-thicket-21836.herokuapp.com/lab" method="post">
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="user_name" maxlength="140"> 
+            </li>
+            <li>
+              <label for="interests">Interests</label>
+              <textarea id="interests" name="user_intrst" rows="5" cols="33">By default, this element is filled with this text</textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

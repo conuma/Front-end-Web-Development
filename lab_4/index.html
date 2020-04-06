@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Catherine's Lab 4</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header">Prof A's Demo Page</div>
+        <button class="button" onclick="clickMe()">
+          Click me to make a change
+        </button>
+        <div class="content">
+          <p>
+            Retro fam narwhal hoodie meggings viral bushwick yr chartreuse.
+            Chartreuse seitan banh mi selfies, woke ennui venmo craft beer. Air
+            plant tumeric retro DIY iPhone poutine. +1 gastropub chillwave,
+            cronut glossier pork belly tacos poke next level fanny pack vegan
+            jianbing lo-fi.
+          </p>
+        </div>
+        <div class="footer"></div>
+      </div>
+    </div>
+    <script>
+      function clickMe() {
+        const content = document.querySelector('.content');
+        content.innerHTML = "Hello world";
+      }
+
+      let myHeading = document.querySelector('.header');
+      let myName = "Catherine Onumajuru";
+      myHeading.textContent = myName+"'s Lab 4";
+
+      let cont = document.querySelector('.content');
+      if(cont.querySelector('p')) {
+        cont.querySelector('p').remove();
+      }
+
+      let newP1 = document.createElement('p');
+      let newP2 = document.createElement('p');
+      cont.append("My name has "+myName.length.toString()+" characters", newP1);
+      newP1.className = "name";
+      cont.append("The third character in my name is "+myName.charAt(2).toUpperCase(), newP2);
+      newP2.className = "chars";
+
+      let nameP = document.querySelector('.chars');
+      nameP.textContent += "\n"+myName.substr(myName.length-3);
+      myFirst = myName.substring(0, myName.indexOf(" "));
+      myLast = myName.substr(myName.indexOf(" "));
+      nameLength = (myFirst+myLast).length;
+
+      myHeading.append(" " + nameLength);
+    </script>
+  </body>
+</html>
