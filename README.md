@@ -1,7 +1,7 @@
 # Web-Development
 Coursework, in which I used HTML, CSS, and JavaScript
 
-Go to https://conuma.github.io/Front-end-Web-Development/ to view a GitHub Pages site for this repository and see a made-up resume. Files used for website are index.html, styles.css, and animoji1.png. 
+Go to https://conuma.github.io/Web-Development/ to view a GitHub Pages site for this repository and see a made-up resume. Files used for website are index.html, styles.css, and animoji1.png. 
 
 Lab_2 - HTML, CSS
 
